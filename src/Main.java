@@ -13,5 +13,6 @@ public class Main {
         Empleado empleado2 = new Empleado("Sofía", "Química", 3500, piano);
         gestor.agregarEmpleado(empleado2);
         gestor.listar();
+        gestor.buscarEmpleadoPorNombre("Sofía");
     }
 }

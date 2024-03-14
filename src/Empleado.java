@@ -1,24 +1,14 @@
 public class Empleado implements InstrumentoMusical {
     String nombre;
     String departamento;
-
     float salario;
     private InstrumentoMusical instrumentoAsignado;
 
-    public Empleado(String nombre, String departmento, float salario) {
+    public Empleado(String nombre, String departamento, float salario) {
+        this.nombre = nombre;
+        this.departamento = departamento;
+        this.salario = salario;
     }
-
-    public InstrumentoMusical getInstrumentoAsignado() {
-        return instrumentoAsignado;
-    }
-
-    public void setInstrumentoAsignado(InstrumentoMusical instrumentoAsignado) {
-        this.instrumentoAsignado = instrumentoAsignado;
-    }
-
-    public Empleado() {
-    }
-
 
     public Empleado(String nombre, String departamento, float salario, InstrumentoMusical instrumentoAsignado) {
         this.nombre = nombre;
@@ -26,6 +16,12 @@ public class Empleado implements InstrumentoMusical {
         this.salario = salario;
         this.instrumentoAsignado = instrumentoAsignado;
     }
+
+    public Empleado() {
+
+    }
+
+    // Métodos getter y setter
 
     public String getNombre() {
         return nombre;
@@ -49,5 +45,13 @@ public class Empleado implements InstrumentoMusical {
 
     public void setSalario(float salario) {
         this.salario = salario;
+    }
+
+    public InstrumentoMusical getInstrumentoAsignado() {
+        return instrumentoAsignado;
+    }
+
+    public void setInstrumentoAsignado(InstrumentoMusical instrumentoAsignado) {
+        this.instrumentoAsignado = instrumentoAsignado;
     }
 }
